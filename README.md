@@ -4,6 +4,8 @@
 This repository contains the implementation used in the paper “Contrastive Time-Series Forecasting with Anomalies (Co-TSFA)” 
 
 The method introduces a contrastive regularization framework designed to improve the robustness of time-series forecasting models when evaluated under anomalous conditions.
+
+Co-TSFA is model agnostic and can be applied to any model using an encoder-decoder structure or similar. This repository is based on the Time-Series-Library repository by Tsinghua University, but the files are adapted to support Co-TSFA. The Co-TSFA contrastive loss function is defined under ./utils/contrastive_losses.py and the anomaly injection functions are defined under ./utils/anomaly_injection.py. Since different models use different type of encoders that may consist of multiple steps, Co-TSFA is applied differently for specific models. Therefore, each model has their own exp files under the "exp" folder. 
  
 ## Usage
 
