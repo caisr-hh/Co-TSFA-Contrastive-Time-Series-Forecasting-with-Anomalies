@@ -28,5 +28,5 @@ Co-TSFA is model-agnostic and can be applied to forecasting architectures such a
 ```
 pip install -r requirements.txt
 ```
-2. Download the datasets. References to the datasets are in the paper.
+2. Download the datasets. References to the datasets are in the paper (the ATM dataset is not public).
 3. Run one of the command examples or experiment examples in the scripts folder to run the models. Since the ATM dataset won't be made public, the commands for the other datasets are recommended for running the code. 
