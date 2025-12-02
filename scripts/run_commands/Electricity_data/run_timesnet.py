@@ -1,0 +1,34 @@
+#!/bin/bash
+
+python -u ./run.py \
+  --task_name long_term_forecast \
+  --method Co_TSFA \
+  --is_training 1 \
+  --root_path ./data/ \
+  --data_path electricity.csv \
+  --data electricity \
+  --target OT \
+  --model TimesNet \
+  --model_id run_Co_TSFA \
+  --features S \
+  --learning_rate 0.0001 \
+  --train_epochs 10 \
+  --batch_size 128 \
+  --loss SMAPE \
+  --enc_in 1 \
+  --dec_in 1 \
+  --c_out 1 \
+  --d_model 64 \
+  --d_ff 128 \
+  --n_head 4 \
+  --seq_len 128 \
+  --label_len 64 \
+  --pred_len 1 \
+  --seed 1 \
+  --ano_category_in_train none \
+  --ano_category_in_test none \
+  --continuous_ano_type input_only \
+  --pointwise_ano_ratio 0.1 \
+  --pointwise_ano_type const \
+  --pointwise_ano_scale_const 0.5 \
+  --pointwise_ano_scale_gaussian 2

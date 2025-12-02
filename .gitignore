@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.npy
+*.npz
+
+# TSLib / TimesNet outputs
+checkpoints/
+test_results/
+results/
+logs/
+*.log
+*.csv
+*.pdf
+*.png
+
+# Environment
+.env
+venv/
+*/venv/
+*/.venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large files (optional)
+*.pth
+*.pt
+*.onnx
+
+# System
+.DS_Store
+Thumbs.db
