@@ -1,5 +1,5 @@
 # Co-TSFA: Contrastive Time-Series Forecasting with Anomalies
-## Official Codebase for the ICLR 2026 Submission
+## Official Codebase for the TMLR 2026 Submission
 
 This repository contains the implementation used in the paper “Contrastive Time-Series Forecasting with Anomalies (Co-TSFA)” 
 
